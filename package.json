@@ -1,0 +1,46 @@
+{
+  "name": "postcss-plugin-namespace",
+  "version": "0.0.1",
+  "description": "A PostCSS plugin that could add css selector before all selectors,so that the styles will not affect other projects.",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "namespace",
+    "selectors"
+  ],
+  "main":"index.js",
+  "scripts": {
+    "test": "jest && eslint *.js"
+  },
+  "author": "ymrdf <837856276@qq.com>",
+  "license": "MIT",
+  "repository": "ymrdf/postcss-plugin-namespace",
+  "bugs": {
+    "url": "https://github.com/ymrdf/postcss-plugin-namespace/issues"
+  },
+  "homepage": "https://github.com/ymrdf/postcss-plugin-namespace",
+  "dependencies": {
+    "postcss": "^7.0.6"
+  },
+  "devDependencies": {
+    "@logux/eslint-config": "^27.0.0",
+    "eslint": "^5.10.0",
+    "eslint-config-postcss": "^3.0.7",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-es5": "^1.3.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.1.2",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^23.6.0"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
