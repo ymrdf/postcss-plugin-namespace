@@ -9,7 +9,7 @@
     "namespace",
     "selectors"
   ],
-  "main":"index.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest && eslint *.js"
   },

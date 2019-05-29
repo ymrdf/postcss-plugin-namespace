@@ -1,4 +1,3 @@
-
 /**
  * main function
  * @param {string} prefix the css selector want to add
@@ -16,26 +15,29 @@ function plugin (prefix, options) {
       if (!rule.selectors) {
         return rule
       }
+      console.log(rule.selectors)
 
       rule.selectors = rule.selectors.map(function (selector) {
-        if (classMatchesTest(selector, options.ignore) ||
-            selector.trim().length === 0) {
+        if (
+          classMatchesTest(selector, options.ignore) ||
+          selector.trim().length === 0
+        ) {
           return selector
         }
         return prefix.trim() + ' ' + selector
       })
       return rule
     })
-  }
+  };
 }
 
 /**
-   * Determine if class passes test
-   *
-   * @param {string} clss selector
-   * @param {string} test reg or string
-   * @return {boolean} if class selector
-   */
+ * Determine if class passes test
+ *
+ * @param {string} clss selector
+ * @param {string} test reg or string
+ * @return {boolean} if class selector
+ */
 function classMatchesTest (clss, test) {
   if (!test) {
     return false
