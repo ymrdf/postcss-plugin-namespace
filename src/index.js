@@ -11,11 +11,15 @@ function plugin (prefix, options) {
     if (!prefix || typeof prefix !== 'string') {
       return
     }
+
     root.walkRules(function (rule) {
       if (!rule.selectors) {
         return rule
       }
-      console.log(rule.selectors)
+
+      if (specailTest(rule)) {
+        return rule
+      }
 
       rule.selectors = rule.selectors.map(function (selector) {
         if (
@@ -28,7 +32,7 @@ function plugin (prefix, options) {
       })
       return rule
     })
-  };
+  }
 }
 
 /**
@@ -62,6 +66,19 @@ function classMatchesTest (clss, test) {
   }
 
   return clss === test
+}
+
+/**
+ * Determine if the selector couldn't be added namespace
+ *
+ * @param {object} rule css rule
+ * @return {boolean} if the selector couldn't be added namespace
+ */
+function specailTest (rule) {
+  if (rule.parent && rule.parent.name === 'keyframes') {
+    return true
+  }
+  return false
 }
 
 module.exports = plugin
