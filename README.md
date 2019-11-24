@@ -1,4 +1,4 @@
-# PostCSS Plugin Namespace [![Build Status][ci-img]][ci]
+# PostCSS Plugin Namespace [![Build Status][ci-img]][ci][![npm](https://img.shields.io/npm/v/postcss-plugin-namespace.svg)](https://www.npmjs.com/package/postcss-plugin-namespace)[![npm](https://img.shields.io/npm/dm/postcss-plugin-namespace.svg)](https://www.npmjs.com/package/postcss-plugin-namespace)
 
 [PostCSS] A PostCSS plugin that could add css selector before all selectors,so that the styles will not affect other projects.
 
