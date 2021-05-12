@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/ymrdf/postcss-plugin-namespace",
   "dependencies": {
-    "postcss": "^7.0.6"
+    "postcss": "^8.2.10"
   },
   "devDependencies": {
     "@logux/eslint-config": "^27.0.0",
