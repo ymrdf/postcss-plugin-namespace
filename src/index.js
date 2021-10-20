@@ -75,7 +75,11 @@ function classMatchesTest (clss, test) {
  * @return {boolean} if the selector couldn't be added namespace
  */
 function specailTest (rule) {
-  if (rule.parent && rule.parent.name === 'keyframes') {
+  if (
+    rule.parent &&
+    rule.parent.name &&
+    rule.parent.name.indexOf('keyframes') > -1
+  ) {
     return true
   }
   return false

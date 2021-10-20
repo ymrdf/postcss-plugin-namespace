@@ -1,6 +1,6 @@
 {
   "name": "postcss-plugin-namespace",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A PostCSS plugin that could add css selector before all selectors,so that the styles will not affect other projects.",
   "keywords": [
     "postcss",
@@ -41,6 +41,7 @@
     "extends": "eslint-config-postcss/es5"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "transform": {}
   }
 }

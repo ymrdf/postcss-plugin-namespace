@@ -72,4 +72,12 @@ describe('work correctly when there has a "@" ', function () {
         '.test'
       )
     })
+  it('do not add selector which rule is inside @-webkit-keyframes',
+    function () {
+      return run(
+        '@-webkit-keyframes in { from { width: 300%; } to { width: 100%; } }',
+        '@-webkit-keyframes in { from { width: 300%; } to { width: 100%; } }',
+        '.test'
+      )
+    })
 })
