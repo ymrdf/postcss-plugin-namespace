@@ -35,7 +35,7 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-standard": "^4.0.0",
-    "jest": "^23.6.0"
+    "jest": "^29.3.1"
   },
   "eslintConfig": {
     "extends": "eslint-config-postcss/es5"
